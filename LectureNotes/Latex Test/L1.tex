@@ -1,4 +1,7 @@
-\documentclass[a4paper]{article}
+\documentclass[12pt, a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage[utf8]{inputenc}
 \usepackage{xeCJK}
@@ -14,18 +17,108 @@
 \setlist[itemize,2]{label=$\circ$}
 \setlist[itemize,3]{label=$\triangleright$}
 
-\title{Notes on Empirical Methods in Business \\ Preview: Introduction}
+\title{Notes on Empirical Methods in Business \\ Lecture 0: Introduction}
 \author{Hang XU \\hxuch@connect.ust.hk}
 \date{\today}
 \maketitle
 
 \section{Introduction}
 During the first year of my PhD, I have taken a course on Empirical Methods in Business: Modeling and Estimation. 
-This course is designed to provide students with a comprehensive understanding of the most commonly used empirical methods in business research. The main topics of the course can be seen in the following part. 
+This course is designed to provide students with a comprehensive understanding of the most commonly used empirical methods in business research. The main topics of the course can be seen in section 3. 
 I mainly used handwritten notes when I was taking the lectures, which is hard to formalize. As a PhD researcher specializing in empirical studies, it is necessary to have a clear understanding of common empirical methods.
 Therefore, I review the course content and summarize it in a more formal way to help others who are interested in empirical methods in business research.
 
 Worth to mention that, all the faults in the notes are mine, and I will try my best to make it accurate and clear. If you find any mistakes or have any suggestions, please feel free to contact me.
+
+
+\section{Research Classification}
+
+Traditional classifications in empirical research:
+\begin{itemize}
+    \item Controlled data: Lab, AFE, FFE
+    \begin{itemize}
+        \item Field experiment: AFE (artefactual field experiment), FFE (framed field experiment)
+        \item Lab experiment
+    \end{itemize}
+    \item Naturally occurring / observational data
+    \begin{itemize}
+        \item Natural experiment: NE, NFE (natural field experiment\footnote{Field experiment that happens naturally, and people do not realize the experiment they are in.})
+        \item Market data: IV, PSM, STR (Structural modeling)
+    \end{itemize}
+\end{itemize}
+
+\newpage
+
+Identify the \underline{causal treatment effects} has been the main focus of empirical research in business.
+\begin{itemize}
+    \item The golden rule for identification: \textbf{Randomization of treatment status}.
+    \begin{itemize}
+        \item $y_i = \alpha + \gamma T_i + \epsilon_i$, where $T_i$ is the treatment status.
+        \item Randomization makes $E(\epsilon_i | T_i = 0) = E(\epsilon_i | T_i = 1)$
+        \item Thus, $\gamma$ can identify the causal effect of treatment.
+    \end{itemize}
+        \item No endogenous issues: 
+    \begin{itemize}
+        \item People cannot quit or switch the groups;
+        \item No spillover effect:
+        \begin{itemize}
+            \item Across sides: two-sided platform, sellers and buyers switch -- no reverse causality;
+            \item Across groups in one side: individuals in each group do not aware they are treated or controlled. i.e., no information spillovers.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+Market data cannot be randomized, so we need to use other methods to identify the causal effect of treatment:
+
+\begin{itemize}
+    \item Statistical methods: Approximating the experiments: e.g., DiD
+    \item Econometric methods:
+    \begin{itemize}
+        \item Control methods
+        \item Instrument variables
+        \item Structural models
+    \end{itemize}
+\end{itemize}
+
+Many researchers focus more on fancy methods, ignoring the data and assumptions, making the story less reliable. Questions need to think before digging into the research:
+\begin{itemize}
+    \item What is the data? Can it help identify the causal effects?
+    \item What are the identification assumptions? Are they reasonable?
+\end{itemize}
+
+4 key components in empirical research:
+
+\begin{itemize}
+    \item \textbf{Research Questions}
+    \begin{itemize}
+        \item Why are your research questions important?
+        \item What is the use for business/consumers/regulators?
+        \item What is your contribution to the literature?
+    \end{itemize}
+    
+    \item \textbf{Data}
+    \begin{itemize}
+        \item Can your data help address your research questions?
+    \end{itemize}
+    
+    \item \textbf{Model}
+    \begin{itemize}
+        \item What is \(Y\)? What are your \(X\)'s?
+        \item What is the relationship between \(Y\) and \(X\)'s?
+        \item What is the data generating process (DGP)?
+        \item How does your model address your research questions?
+    \end{itemize}
+    
+    \item \textbf{Estimation}
+    \begin{itemize}
+        \item OLS / NLS? MLE? Method of moments? Other more advanced methods?
+        \item What is the identification of model parameters?
+    \end{itemize}
+\end{itemize}
+
+In the main content of this note, I will focus more on modeling and estimation part. 
+Given the research question and data, how to build up the model, what are potential issues of the model, and how to estimate the parameters are the interests.
+
 
 \section{Main Methods Covered}
 \begin{itemize}
@@ -68,5 +161,11 @@ Worth to mention that, all the faults in the notes are mine, and I will try my b
     \end{itemize}
 
 \end{itemize}
+
+
+
+
+
+
 
 \end{document}
