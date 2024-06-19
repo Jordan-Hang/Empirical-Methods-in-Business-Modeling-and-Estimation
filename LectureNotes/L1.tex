@@ -1,0 +1,240 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Empirical Methods in Business: Modeling and Estimation},
+  pdfauthor={Hang XU},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Empirical Methods in Business: Modeling and Estimation}
+\author{Hang XU}
+\date{}
+
+\begin{document}
+\maketitle
+
+\subtitle{Lecture 1: Research Classification}
+
+\hypertarget{introduction-to-experiments}{%
+\section{Introduction to
+Experiments}\label{introduction-to-experiments}}
+
+\hypertarget{field-experiment}{%
+\subsection{Field Experiment}\label{field-experiment}}
+
+\begin{itemize}
+\tightlist
+\item
+  Field Experiment and Natural Experiment
+\item
+  Control Variables: Price, Sales
+\end{itemize}
+
+\hypertarget{identifying-causal-effects}{%
+\section{Identifying Causal Effects}\label{identifying-causal-effects}}
+
+\hypertarget{necessary-conditions-for-experiments}{%
+\subsection{Necessary Conditions for
+Experiments}\label{necessary-conditions-for-experiments}}
+
+\begin{itemize}
+\tightlist
+\item
+  Golden Rule: Randomization of Treatment Status
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Everyone has the same probability to be treated or controlled
+  \end{itemize}
+\item
+  No endogenous attrition or selection issue
+\item
+  No spillover effects across groups
+\end{itemize}
+
+\hypertarget{statistical-methods-for-inferring-causality}{%
+\section{Statistical Methods for Inferring
+Causality}\label{statistical-methods-for-inferring-causality}}
+
+\hypertarget{data-considerations}{%
+\subsection{Data Considerations}\label{data-considerations}}
+
+\begin{itemize}
+\tightlist
+\item
+  Data cannot be randomized
+\item
+  Econometric Methods: Fixed Effects, Instrumental Variables
+\item
+  Importance of identifying assumptions and verifying their
+  reasonableness
+\end{itemize}
+
+\hypertarget{research-questions-and-data}{%
+\subsection{Research Questions and
+Data}\label{research-questions-and-data}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Research Questions: Why is it important?
+\item
+  Data: Can the data help address the research questions?
+\item
+  Model: Data generating process (relationship between Y and X)
+\item
+  Estimation: Methods for identification
+\end{enumerate}
+
+\hypertarget{empirical-analysis}{%
+\section{Empirical Analysis}\label{empirical-analysis}}
+
+\hypertarget{linear-regression-model}{%
+\subsection{Linear Regression Model}\label{linear-regression-model}}
+
+\hypertarget{complementarity-and-substitutability}{%
+\subsection{Complementarity and
+Substitutability}\label{complementarity-and-substitutability}}
+
+\begin{itemize}
+\tightlist
+\item
+  Complementarity: Implementation of one practice increases the marginal
+  return to other practices
+\item
+  Substitutability: Implementation of one practice decreases the
+  marginal return to other practices
+\end{itemize}
+
+\hypertarget{example-olympic-games-analysis}{%
+\section{Example: Olympic Games
+Analysis}\label{example-olympic-games-analysis}}
+
+\hypertarget{research-question}{%
+\subsection{Research Question}\label{research-question}}
+
+\begin{itemize}
+\tightlist
+\item
+  How do population and GDP per capita affect the number of medals won
+  by a country?
+\end{itemize}
+
+\hypertarget{model-specification}{%
+\subsection{Model Specification}\label{model-specification}}
+
+\hypertarget{mixed-effects-model}{%
+\section{Mixed Effects Model}\label{mixed-effects-model}}
+
+\begin{itemize}
+\tightlist
+\item
+  Captures the total effect of competition
+\item
+  Example: ( T\_i = \alpha + \beta\_1 \text{Population}\_i + \beta\_2
+  \text{GDP per capita}\_i + \epsilon\_i )
+\end{itemize}
+
+\hypertarget{prediction-and-model-validation}{%
+\section{Prediction and Model
+Validation}\label{prediction-and-model-validation}}
+
+\hypertarget{predictions}{%
+\subsection{Predictions}\label{predictions}}
+
+\begin{itemize}
+\tightlist
+\item
+  Example: Predict medals based on the model
+\item
+  Use known values for Population and GDP per capita to estimate future
+  medals
+\end{itemize}
+
+\hypertarget{equation-solving}{%
+\subsection{Equation Solving}\label{equation-solving}}
+
+\begin{itemize}
+\tightlist
+\item
+  Solving the equation systems to get predictions
+\end{itemize}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+\begin{itemize}
+\tightlist
+\item
+  Summary of key points
+\item
+  Importance of considering assumptions in econometric models
+\item
+  Future research directions
+\item
+  test text
+\end{itemize}
+
+\hypertarget{appendices}{%
+\section{Appendices}\label{appendices}}
+
+\end{document}

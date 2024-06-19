@@ -1,6 +1,5 @@
 ---
-title: "Empirical Methods in Business: Modeling and Estimation -- Lecture 1 Research
-  Classification"
+title: "Empirical Methods in Business: Modeling and Estimation Lecture 1: Research Classification"
 author: "Hang XU"
 # output:
 #   beamer_presentation:
