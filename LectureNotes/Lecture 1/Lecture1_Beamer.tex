@@ -7,34 +7,54 @@
 \usepackage{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\setstretch{1.1}
 
 % Customize the symbols
 \setlist[itemize,1]{label=$\bullet$}
 \setlist[itemize,2]{label=$\circ$}
 \setlist[itemize,3]{label=$\triangleright$}
 
-\title{Notes on Empirical Methods in Business \\ Lecture 0: Introduction}
+\title{Notes on Empirical Methods in Business \\ Lecture 1: Introduction and Research Classification}
 \author{Hang XU}
 \institute{hxuch@connect.ust.hk}
 \date{\today}
-\usetheme{CambridgeUS}
+\usetheme{Madrid}
 
 \begin{document}
 
 \frame{\titlepage}
 
+% get a table page
 \begin{frame}
-\frametitle{Introduction}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}
+\frametitle{Background}
+\justifying
 \begin{itemize}
-    \item During the first year of my PhD, I have taken a course on Empirical Methods in Business: Modeling and Estimation. 
+    \item During the first year of my PhD, I have taken a course on Empirical Methods in Business: Modeling and Estimation taught by Prof. Tat Chan from WUSTL. 
     \item This course is designed to provide students with a comprehensive understanding of the most commonly used empirical methods in business research. 
     \item The main topics of the course can be seen in section 3. I mainly used handwritten notes when I was taking the lectures, which is hard to formalize. 
-    \item As a PhD researcher specializing in empirical studies, it is necessary to have a clear understanding of common empirical methods.
-    \item Therefore, I review the course content and summarize it in a more formal way to help others who are interested in empirical methods in business research.
-    \item Worth to mention that, all the faults in the notes are mine, and I will try my best to make it accurate and clear. If you find any mistakes or have any suggestions, please feel free to contact me.
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{Purpose of the Notes}
+\justifying
+\begin{itemize}
+    \item As a PhD researcher specializing in empirical studies, it is necessary to have a clear understanding of common empirical methods. Therefore, I review the course content and summarize it in a more formal way to help others who are interested in empirical methods in business research.
+    \item Worth to mention that, my notes are mainly based on what prof. Tat Chan's lecture notes, \textbf{but all the faults in this notes are mine}. I will try my best to make it accurate and clear. 
+    \item If you find any mistakes or have any suggestions, please feel free to contact me.
+\end{itemize}
+\end{frame}
+
+
+\section{Research Classification}
 \begin{frame}
 \frametitle{Research Classification}
 Traditional classifications in empirical research:
@@ -59,12 +79,12 @@ Identify the \underline{causal treatment effects} has been the main focus of emp
     \item The golden rule for identification: \textbf{Randomization of treatment status}.
     \begin{itemize}
         \item $y_i = \alpha + \gamma T_i + \epsilon_i$, where $T_i$ is the treatment status.
-        \item Randomization makes $E(\epsilon_i | T_i = 0) = E(\epsilon_i | T_i = 1)$
+        \item Randomization makes $E(\epsilon_i | T_i = 0) = E(\epsilon_i | T_i = 1)$.
         \item Thus, $\gamma$ can identify the causal effect of treatment.
     \end{itemize}
     \item No endogenous issues: 
     \begin{itemize}
-        \item People cannot quit or switch the groups;
+        \item People cannot quit or switch the groups.
         \item No spillover effect:
         \begin{itemize}
             \item Across sides: two-sided platform, sellers and buyers switch -- no reverse causality;
@@ -89,11 +109,14 @@ Market data cannot be randomized, so we need to use other methods to identify th
 \end{frame}
 
 \begin{frame}
-\frametitle{Research Considerations}
-Many researchers focus more on fancy methods, ignoring the data and assumptions, making the story less reliable. Questions need to think before digging into the research:
+\frametitle{Pay Attention to Data and Assumptions}
 \begin{itemize}
-    \item What is the data? Can it help identify the causal effects?
-    \item What are the identification assumptions? Are they reasonable?
+    \item Many researchers focus more on fancy methods, ignoring the data and assumptions, making the story less reliable.
+    \item Questions need to think before digging into the research:
+    \begin{itemize}
+        \item What is the data? Can it help identify the causal effects?
+        \item What are the identification assumptions? Are they reasonable?
+    \end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -123,38 +146,76 @@ Many researchers focus more on fancy methods, ignoring the data and assumptions,
     
     \item \textbf{Estimation}
     \begin{itemize}
-        \item OLS / NLS? MLE? Method of moments? Other more advanced methods?
+        \item OLS / NLS? MLE? Method of moments? Other advanced methods?
         \item What is the identification of model parameters?
     \end{itemize}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Main Methods Covered}
-\begin{itemize}
-    \item Issues in Regression
+    \frametitle{Main Content of the Notes}
     \begin{itemize}
-        \item Multicollinearity
-        \item Heteroskedasticity
-        \item Causality
-    \end{itemize}
-    
-    \item Causal Inference and Treatment Effect Models
-    \begin{itemize}
-        \item Instrument Variables
-        \item Panel Data with Fixed Effects
-        \item Treatment Effects
+        \item In this note, I will focus more on \textbf{modeling} and \textbf{estimation}. 
+        \item Given the research question and data, how to build up the model, what are potential issues of the model, and how to estimate the parameters are the interests.
+        \item What is a model?
         \begin{itemize}
-            \item Matching
-            \item Propensity Score Matching
-            \item Inverse Probability Weighting
-            \item Difference-in-Differences
-            \item Synthetic Control
-            \item Synthetic Difference-in-Differences
-            \item Regression Discontinuity
+            \item A general model: $Y = f (X, e; \beta)$
+            \item Specification: how to define $f(\cdot)$ and the distribution of $e$
+            \item Effect of $X$ on $Y$: $\beta$
+            \begin{itemize}
+                \item $Y$: Interested outcome variable.
+                \item $X$: Important business policies / actions + controls.
+            \end{itemize}
+        \end{itemize}
+        \item Main challenge: Can we identify true $\beta$ from the data by using appropriate estimation methods? 
+    \end{itemize}
+\end{frame}
+
+
+\section{Main Methods Covered}
+\begin{frame}
+    \frametitle{Topic 1: Regressions}
+    The main topics covered in the course:
+    \begin{itemize}
+        \item Issues in Regressions
+        \begin{itemize}
+            \item Specification
+            \item Multicollinearity
+            \item Heteroskedasticity
+            \item Endogenity
+        \end{itemize}
+        \item Endogenity Solutions
+        \begin{itemize}
+            \item Instrument Variables
+            \item Panel Data with Fixed Effects
         \end{itemize}
     \end{itemize}
+\end{frame}
 
+\begin{frame}
+    \frametitle{Topic 2: Treatment Effects and Causal Inference}
+    \begin{itemize}
+        \item Treatment Effect and Causal Inference
+        \begin{itemize}
+            \item Introduction Treatment Effects
+            \item Causal Inference Methods
+            \begin{itemize}
+                \item Matching
+                \item Propensity Score Matching
+                \item Inverse Probability Weighting
+                \item Difference-in-Differences
+                \item Synthetic Control
+                \item Synthetic Difference-in-Differences
+                \item Regression Discontinuity
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Topic 3: Advanced Methods and Structural Modeling}
+\begin{itemize}
     \item Choice Model
     \begin{itemize}
         \item Binary Choice Model
@@ -170,5 +231,6 @@ Many researchers focus more on fancy methods, ignoring the data and assumptions,
     \end{itemize}
 \end{itemize}
 \end{frame}
+
 
 \end{document}
