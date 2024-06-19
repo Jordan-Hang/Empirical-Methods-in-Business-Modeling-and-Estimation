@@ -49,10 +49,10 @@ output:
 # Empirical Analysis
 
 ## Linear Regression Model
-- Model: \( Y = X\beta + \epsilon \)
+<!-- - Model: $Y = X\beta + \epsilon \$
 - Ordinary Least Squares (OLS) Estimator
-  - \( \hat{\beta} = (X'X)^{-1}X'Y \)
-  - Conditions: No perfect multicollinearity, errors have zero mean
+  - $\hat{\beta} = (X'X)^{-1}X'Y \$ -->
+  <!-- - Conditions: No perfect multicollinearity, errors have zero mean -->
 
 ## Complementarity and Substitutability
 - Complementarity: Implementation of one practice increases the marginal return to other practices
@@ -64,9 +64,9 @@ output:
 - How do population and GDP per capita affect the number of medals won by a country?
 
 ## Model Specification
-- Model 1: \( \text{Medals}_i = \beta_0 + \beta_1 \text{Population}_i + \beta_2 \text{GDP per capita}_i + \epsilon_i \)
+<!-- - Model 1: \( \text{Medals}_i = \beta_0 + \beta_1 \text{Population}_i + \beta_2 \text{GDP per capita}_i + \epsilon_i \)
   - Control for competition level and other factors
-- Model 2: \( \text{Medals}_i = \beta_0 + \beta_1 \text{Population}_i + \beta_2 \text{GDP per capita}_i + \beta_3 (\text{Competition})_i + \epsilon_i \)
+- Model 2: \( \text{Medals}_i = \beta_0 + \beta_1 \text{Population}_i + \beta_2 \text{GDP per capita}_i + \beta_3 (\text{Competition})_i + \epsilon_i \) -->
 
 # Mixed Effects Model
 
@@ -86,7 +86,7 @@ output:
 
 - Summary of key points
 - Importance of considering assumptions in econometric models
+- Future research directions
+- test text
 
----
-
-# Appendices (if any)
+# Appendices
