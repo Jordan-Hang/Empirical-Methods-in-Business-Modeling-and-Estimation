@@ -12,4 +12,4 @@
 ## Table of Content
 
 - Lecture 1: [Introduction and Research Classification](https://nbviewer.org/github/Jordan-Hang/Empirical-Methods-in-Business-Modeling-and-Estimation/blob/main/LectureNotes/Lecture%201/Lecture1_Beamer.pdf).
-- To be continued.
+- The following lectures will be updated soon.
