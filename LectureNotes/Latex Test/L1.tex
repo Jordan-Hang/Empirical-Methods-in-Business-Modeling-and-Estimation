@@ -1,33 +1,72 @@
-\documentclass[12pt,a4paper]{article}
-
-% 设置页面边距
-\usepackage[margin=1in]{geometry}
-% 支持中文
-\usepackage[UTF8]{ctex}
-% 数学公式支持
+\documentclass[a4paper]{article}
 \usepackage{amsmath,amsfonts,amssymb}
-% 插入图片
+\usepackage[utf8]{inputenc}
+\usepackage{xeCJK}
 \usepackage{graphicx}
-% 链接支持
+\usepackage{mathtools}
+\usepackage{geometry}
+\usepackage{enumitem}
 \usepackage{hyperref}
 
 \begin{document}
 
-\title{Empirical Methods in Business: Modeling and Estimation}
-\author{Hang XU}
+% Customize the symbols
+\setlist[itemize,2]{label=$\circ$}
+\setlist[itemize,3]{label=$\triangleright$}
+
+\title{Notes on Empirical Methods in Business \\ Preview: Introduction}
+\author{Hang XU \\hxuch@connect.ust.hk}
 \date{\today}
 \maketitle
 
-\section{Lecture 1}
-This is the first lecture.
+\section{Introduction}
+During the first year of my PhD, I have taken a course on Empirical Methods in Business: Modeling and Estimation. 
+This course is designed to provide students with a comprehensive understanding of the most commonly used empirical methods in business research. The main topics of the course can be seen in the following part. 
+I mainly used handwritten notes when I was taking the lectures, which is hard to formalize. As a PhD researcher specializing in empirical studies, it is necessary to have a clear understanding of common empirical methods.
+Therefore, I review the course content and summarize it in a more formal way to help others who are interested in empirical methods in business research.
 
-\subsection{Formula}
+Worth to mention that, all the faults in the notes are mine, and I will try my best to make it accurate and clear. If you find any mistakes or have any suggestions, please feel free to contact me.
 
-\begin{equation}
-    E = mc^2
-\end{equation}
+\section{Main Methods Covered}
+\begin{itemize}
+    
+    \item Issues in Regression
+    \begin{itemize}
+        \item Multicollinearity
+        \item Heteroskedasticity
+        \item Causality
+    \end{itemize}
+    
+    \item Causal Inference and Treatment Effect Models
+    \begin{itemize}
+        \item Instrument Variables
+        \item Panel Data with Fixed Effects
+        \item Treatment Effects
+        \begin{itemize}
+            \item Matching
+            \item Propensity Score Matching
+            \item Inverse Probability Weighting
+            \item Difference-in-Differences
+            \item Synthetic Control
+            \item Synthetic Difference-in-Differences
+            \item Regression Discontinuity
+        \end{itemize}
+    \end{itemize}
 
-\section{结论}
-这里是结论部分。
+    \item Choice Model
+    \begin{itemize}
+        \item Binary Choice Model
+        \item Multinomial Choice - Ordered
+        \item Multinomial Choice - Non-Ordered
+        \item Nested Logit Model
+    \end{itemize}
+
+    \item Selection Model
+    \begin{itemize}
+        \item Tobit Model
+        \item Others
+    \end{itemize}
+
+\end{itemize}
 
 \end{document}
