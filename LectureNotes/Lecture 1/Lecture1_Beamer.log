@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.2)  19 JUN 2024 20:51
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.2)  19 JUN 2024 21:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/hang/Library/CloudStorage/OneDrive-HKUSTConnect/Desktop/R/PhDCourseNotes/Empirical-Methods-in-Business-Modeling-and-Estimation/LectureNotes/Latex Test/Lecture1_Beamer"
-(/Users/hang/Library/CloudStorage/OneDrive-HKUSTConnect/Desktop/R/PhDCourseNotes/Empirical-Methods-in-Business-Modeling-and-Estimation/LectureNotes/Latex Test/Lecture1_Beamer.tex
+**"/Users/hang/Library/CloudStorage/OneDrive-HKUSTConnect/Desktop/R/PhDCourseNotes/Empirical-Methods-in-Business-Modeling-and-Estimation/LectureNotes/Lecture 1/Lecture1_Beamer"
+(/Users/hang/Library/CloudStorage/OneDrive-HKUSTConnect/Desktop/R/PhDCourseNotes/Empirical-Methods-in-Business-Modeling-and-Estimation/LectureNotes/Lecture 1/Lecture1_Beamer.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2021-11-22> (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2021/10/18 v3.64 A class for typesetting presentations
@@ -1038,11 +1038,11 @@ Package rerunfilecheck Info: File `Lecture1_Beamer.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  26667 strings out of 476257
- 580535 string characters out of 5811151
+ 580532 string characters out of 5811151
  910108 words of memory out of 5000000
  46794 multiletter control sequences out of 15000+600000
  409315 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,15n,122p,621b,629s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,15n,122p,620b,629s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Lecture1_Beamer.pdf (13 pages).
