@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.2)  19 JUN 2024 20:00
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.2)  19 JUN 2024 20:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/hang/Library/CloudStorage/OneDrive-HKUSTConnect/Desktop/R/PhDCourseNotes/Empirical-Methods-in-Business-Modeling-and-Estimation/LectureNotes/L1
-(/Users/hang/Library/CloudStorage/OneDrive-HKUSTConnect/Desktop/R/PhDCourseNotes/Empirical-Methods-in-Business-Modeling-and-Estimation/LectureNotes/L1.tex
+**/Users/hang/Library/CloudStorage/OneDrive-HKUSTConnect/Desktop/R/PhDCourseNotes/Empirical-Methods-in-Business-Modeling-and-Estimation/LectureNotes/Lecture0
+(/Users/hang/Library/CloudStorage/OneDrive-HKUSTConnect/Desktop/R/PhDCourseNotes/Empirical-Methods-in-Business-Modeling-and-Estimation/LectureNotes/Lecture0.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2021-11-22> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -411,8 +411,8 @@ Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
 (fontspec)             <->"[FandolKai-Regular.otf]/OT:language=dflt;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
-(./L1.aux)
-\openout1 = `L1.aux'.
+No file Lecture0.aux.
+\openout1 = `Lecture0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
@@ -424,7 +424,7 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 14.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 14.
@@ -542,12 +542,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 14.
 LaTeX Info: Redefining \pageref on input line 14.
 LaTeX Info: Redefining \nameref on input line 14.
- (./L1.out) (./L1.out)
 \@outlinefile=\write3
-\openout3 = `L1.out'.
+\openout3 = `Lecture0.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
@@ -555,17 +558,23 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] [2] [3] (./L1.aux)
-Package rerunfilecheck Info: File `L1.out' has not changed.
-(rerunfilecheck)             Checksum: 2CD3A1A51821DD6FD96784D2459883D2;413.
+] [2] [3] (./Lecture0.aux)
+
+Package rerunfilecheck Warning: File `Lecture0.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Lecture0.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  2CD3A1A51821DD6FD96784D2459883D2;413.
  ) 
 Here is how much of TeX's memory you used:
- 14656 strings out of 476257
- 301660 string characters out of 5811151
- 669335 words of memory out of 5000000
- 35131 multiletter control sequences out of 15000+600000
+ 14649 strings out of 476257
+ 301682 string characters out of 5811151
+ 668650 words of memory out of 5000000
+ 35130 multiletter control sequences out of 15000+600000
  412357 words of font info for 77 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 70i,8n,81p,432b,552s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,8n,81p,438b,552s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on L1.pdf (3 pages).
+Output written on Lecture0.pdf (3 pages).
