@@ -17,18 +17,18 @@
 \setlist[itemize,2]{label=$\circ$}
 \setlist[itemize,3]{label=$\triangleright$}
 
-\title{Notes on Empirical Methods in Business \\ Lecture 0: Introduction}
+\title{Notes on Empirical Methods in Business \\ Lecture 1: Introduction and Research Classification}
 \author{Hang XU \\hxuch@connect.ust.hk}
 \date{\today}
 \maketitle
 
 \section{Introduction}
-During the first year of my PhD, I have taken a course on Empirical Methods in Business: Modeling and Estimation. 
+During the first year of my PhD, I have taken a course on Empirical Methods in Business: Modeling and Estimation taught by Prof. Tat Chan from WUSTL. 
 This course is designed to provide students with a comprehensive understanding of the most commonly used empirical methods in business research. The main topics of the course can be seen in section 3. 
 I mainly used handwritten notes when I was taking the lectures, which is hard to formalize. As a PhD researcher specializing in empirical studies, it is necessary to have a clear understanding of common empirical methods.
 Therefore, I review the course content and summarize it in a more formal way to help others who are interested in empirical methods in business research.
 
-Worth to mention that, all the faults in the notes are mine, and I will try my best to make it accurate and clear. If you find any mistakes or have any suggestions, please feel free to contact me.
+Worth to mention that, my notes are mainly based on what prof. Tat Chan's lecture notes, \textbf{but all the faults in the notes are mine}. I will try my best to make it accurate and clear. If you find any mistakes or have any suggestions, please feel free to contact me.
 
 
 \section{Research Classification}
@@ -121,20 +121,23 @@ Given the research question and data, how to build up the model, what are potent
 
 
 \section{Main Methods Covered}
-\begin{itemize}
-    
-    \item Issues in Regression
     \begin{itemize}
-        \item Multicollinearity
-        \item Heteroskedasticity
-        \item Causality
-    \end{itemize}
-    
-    \item Causal Inference and Treatment Effect Models
+        \item Issues in Regressions
+        \begin{itemize}
+            \item Specification
+            \item Multicollinearity
+            \item Heteroskedasticity
+            \item Endogenity
+        \end{itemize}
+        \item Endogenity Solutions
+        \begin{itemize}
+            \item Instrument Variables
+            \item Panel Data with Fixed Effects
+        \end{itemize}
+    \item Treatment Effect and Causal Inference
     \begin{itemize}
-        \item Instrument Variables
-        \item Panel Data with Fixed Effects
-        \item Treatment Effects
+        \item Introduction Treatment Effects
+        \item Causal Inference Methods
         \begin{itemize}
             \item Matching
             \item Propensity Score Matching
@@ -152,6 +155,7 @@ Given the research question and data, how to build up the model, what are potent
         \item Multinomial Choice - Ordered
         \item Multinomial Choice - Non-Ordered
         \item Nested Logit Model
+        \item Others
     \end{itemize}
 
     \item Selection Model
